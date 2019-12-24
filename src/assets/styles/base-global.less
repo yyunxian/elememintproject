@@ -1,0 +1,173 @@
+/*html,body{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background: #eee;
+  !*隐藏滚动条，当IE下溢出，仍然可以滚动*!
+  -ms-overflow-style:none;
+  !*火狐下隐藏滚动条*!
+  overflow:-moz-scrollbars-none;
+}
+body{
+  font-size: 12px;
+!*  font:12px "宋体",
+"Arial Narrow",HELVETICA;*!
+  background:#fff;
+  -webkit-text-size-adjust:100%;
+}*/
+img{
+  vertical-align:top;
+}
+p{
+  margin:0;padding:0
+}
+p{word-wrap:break-word}
+
+//二行显示省略号
+.TextBreakTwoLine{
+  position: relative;
+  line-height: 20px;
+  max-height: 40px;
+  overflow: hidden;
+  //超出部分隐藏并在伪类上加上省略号
+  &::after{
+    //content: "..."; position: absolute; bottom: 0; right: 0; padding-left: 40px;
+    //background: -webkit-linear-gradient(left, transparent, #fff 55%);
+    //background: -o-linear-gradient(right, transparent, #fff 55%);
+    //background: -moz-linear-gradient(right, transparent, #fff 55%);
+    //background: linear-gradient(to right, transparent, #fff 55%);
+  }
+}
+.MAIN_BOX{
+  width: 1200px !important;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.defaultBtn{
+  border: none;
+  outline: none;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  color: white;
+  border-radius: 5px;
+  width: 111px;
+  background-color: @theme;
+  cursor: pointer;
+}
+.false{
+  background-color: #c9c9c9;
+  color: #ffffff;
+}
+
+.btn{
+  border: none;
+  outline: none;
+  display: inline-block;
+}
+
+.float_layar{
+  position: absolute;
+  top: 0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+//  阿里巴巴适量图库的图标
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+* {
+  //box-sizing: border-box;
+}
+h1{
+  margin: 0;
+  padding: 0;
+  border: currentColor;
+  list-style-type: none;
+  text-align: center;
+}
+
+/*公共去浮动*/
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+
+.clearfix{zoom:1}//ie浏览器清除浮动
+
+/*向左浮动*/
+.fl{
+  float: left;
+}
+/*向右浮动*/
+.fr{
+  float: right ;
+}
+
+dd{
+  margin: 0;
+  padding: 0;
+  border: currentColor;
+  list-style-type: none;
+}
+/*首页的公共背景*/
+.bg_b{
+  background-color: #eff4f7 !important;
+  border-top: solid 1px #ddd;
+}
+.bg_w{
+  background-color: white !important;
+  border-top: solid 1px #ddd;
+}
+.hide{
+  display: none;
+}
+
+
+.primary_input{
+  border: 1px solid #e5e5e5;
+  padding: 8px 10px;
+  outline: none;
+}
+
+.h-title{
+  font-size: 24px;
+  color: #333;
+  line-height: 30px;
+  text-align: center;
+  margin: 50px 0 25px 0;
+}
+/*div父元素设置model-box    子元素内联元素设置  vertical-align:middle;*/
+.model-box{
+  height: 100%;
+}
+.model-box:after{
+  content:'';
+  width:0;
+  height:100%;
+  display:inline-block;
+  vertical-align:middle;
+}
+
+.h-ul,.v-ul{
+  padding: 0;
+  margin: 0;
+}
+.v-ul li{
+  text-decoration: none;
+  list-style: none;
+}
+.h-ul{
+  //border: 1px solid #e6e6e6;
+  border-top: none;
+}
+.h-ul li{
+  text-decoration: none;
+  list-style: none;
+}
+
+
+

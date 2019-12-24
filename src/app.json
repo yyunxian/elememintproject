@@ -1,0 +1,42 @@
+{
+  "pages": [
+    {
+      "path": "pages/homePage",
+      "config": {
+        "navigationBarTitleText": "饿了"
+      }
+    },
+    "pages/counter",
+    {
+      "path": "packageA/logs",
+      "subPackage": true
+    }
+  ],
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/homePage",
+      "text": "饿了"
+    },
+      {
+        "pagePath": "pages/sell/takeOut",
+        "text": "外卖"
+      },
+      {
+      "pagePath": "pages/search/search",
+      "text": "搜索"
+    },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "van-tag": "/vant-weapp/dist/tag/index"
+  }
+}
