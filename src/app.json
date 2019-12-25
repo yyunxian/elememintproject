@@ -3,29 +3,58 @@
     {
       "path": "pages/homePage",
       "config": {
-        "navigationBarTitleText": "饿了"
+        "navigationBarTitleText": "外卖"
       }
     },
-    "pages/counter",
     {
-      "path": "packageA/logs",
-      "subPackage": true
+      "path": "pages/sell/takeOut",
+      "config": {
+        "navigationBarTitleText": "订单"
+      }
+    },
+    {
+      "path": "pages/search/search",
+      "config": {
+        "navigationBarTitleText": "搜索"
+      }
+    },
+    {
+      "path": "pages/my/my",
+      "config": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/personCenter/login",
+      "config": {
+        "navigationBarTitleText": "登录"
+      }
     }
   ],
   "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#1296db",
     "list": [{
+      "selectedIconPath": "static/icon/activeSell.png",
+      "iconPath": "static/icon/sell.png",
       "pagePath": "pages/homePage",
-      "text": "饿了"
+      "text": "外卖"
     },
       {
+        "selectedIconPath": "static/icon/activeOrder.png",
+        "iconPath": "static/icon/order.png",
         "pagePath": "pages/sell/takeOut",
-        "text": "外卖"
+        "text": "订单"
       },
       {
-      "pagePath": "pages/search/search",
+        "selectedIconPath": "static/icon/activeSearch.png",
+        "iconPath": "static/icon/search.png",
+        "pagePath": "pages/search/search",
       "text": "搜索"
     },
       {
+        "selectedIconPath": "static/icon/activeMy.png",
+        "iconPath": "static/icon/my.png",
         "pagePath": "pages/my/my",
         "text": "我的"
       }]
@@ -37,6 +66,10 @@
     "navigationBarTextStyle": "black"
   },
   "usingComponents": {
-    "van-tag": "/vant-weapp/dist/tag/index"
+    "van-tag": "/vant-weapp/dist/tag/index",
+    "van-button": "/vant-weapp/dist/button/index",
+    "van-cell-group": "/vant-weapp/dist/cell-group/index",
+    "van-field": "/vant-weapp/dist/field/index"
+
   }
 }

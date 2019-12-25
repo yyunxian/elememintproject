@@ -1,6 +1,6 @@
 <template>
   <div class="my">
-    我的
+    <van-button type="primary" @click="goToLogin">登录</van-button>
   </div>
 </template>
 
@@ -15,7 +15,9 @@ export default {
     },
 
   methods: {
-
+    goToLogin(){
+      wx.navigateTo({url:'/pages/personCenter/login'})
+    }
   }
 }
 </script>

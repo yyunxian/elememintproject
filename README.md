@@ -19,3 +19,8 @@ npm run build --report
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+原始项目地址：https://elm.cangdu.org
+
+1.可以忽略代理
